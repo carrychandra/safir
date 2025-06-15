@@ -1,0 +1,31 @@
+{
+  "title": "Linktree template",
+  "username": "@safircaturjaya",
+  "display_image": "assets/images/cropped-Safir-caturjaya-wisaya-logo-beranda.png",
+  "favicon": "assets/images/505509644_17936040489021695_8449798389219945321_n.png",
+  "font_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+  "links": [
+    {
+      "url": "https://safircaturjayawisata.co.id/",
+      "title": "Paket Umrah",
+      "icon": "assets/images/505509644_17936040489021695_8449798389219945321_n.jpg"
+    },
+    {
+      "url": "https://wa.me/62817222223/?text=Saya+ingin+bertanya+terkait+paket+perjalanan+umrah",
+      "title": "Daftarkan Sekarang",
+      "icon": "assets/images/WhatsApp.svg"
+    },
+    {
+      "url": "https://maps.app.goo.gl/x9YyUkSbZGwaMkz99",
+      "title": "Kantor Pusat",
+      "icon": "assets/images/png-clipart-google-maps-navigation-map-text-logo.png",
+      "is_modal": true,
+      "map_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31719.40479429455!2d107.491021!3d-6.403587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696de12125e6ef%3A0x3a9d903f18e04191!2sPT.%20SAFIR%20CATURJAYA%20WISATA!5e0!3m2!1sid!2sid!4v1750000792490!5m2!1sid!2sid"
+    },
+    {
+      "url": "https://facebook.com/safircaturjaya",
+      "title": "Ikuti Kami di Facebook",
+      "icon": "assets/images/facebook.png"
+    }
+  ]
+}
