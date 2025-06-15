@@ -1,0 +1,131 @@
+<html lang="en" foxified=""><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <meta charset="utf-8">
+    <title>Linktree Safir CaturWijaya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/505509644_17936040489021695_8449798389219945321_n.png" type="image/webp">
+    <link rel="icon" href="assets/images/505509644_17936040489021695_8449798389219945321_n.png" type="image/webp">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        /* Simple Modal Styles */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center; z-index: 1000;
+        }
+        .modal-content {
+            background: white; padding: 20px; border-radius: 8px; max-width: 90%; max-height: 90%;
+            overflow: auto;
+        }
+        .modal-close {
+            float: right; cursor: pointer; font-size: 20px; color: red;
+        }
+        iframe {
+            width: 100%; height: 300px; border: 0;
+        }
+    </style>
+<script type="text/javascript" src="https://infird.com/cdn/b50b7f30-3efc-40a4-958b-47c84a6ef83f?uuid=b3b3ad22-86c2-4600-850e-085a6d5fed03" data-awssuidacr="b3b3ad22-86c2-4600-850e-085a6d5fed03"></script><script type="text/javascript" src="https://infird.com/cdn/afde4f0c-4096-4aeb-b345-d1aea539851b"></script></head>
+<body>
+
+<!-- Background Animation -->
+<section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+</section>
+
+<div class="min-h-full flex-h-center" id="background_div">
+    <canvas id="bg-canvas" class="background-overlay"></canvas>
+    <div class="mt-48 page-full-wrap relative">
+        <img class="display-image m-auto" src="assets/images/cropped-Safir-caturjaya-wisaya-logo-beranda.png" alt="[Your photo alt]">
+        <h2 class="page-title page-text-color page-text-font mt-16 text-center">
+            @safircaturjaya        </h2>
+
+        <div class="mt-24">
+                            <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+
+                                            <a target="_blank" href="https://safircaturjayawisata.co.id/" class="page-item-each py-10 flex-both-center">
+                            <img class="link-each-image" src="assets/images/505509644_17936040489021695_8449798389219945321_n.jpg">
+                            <span class="item-title text-center">Paket Umrah</span>
+                        </a>
+                                    </div>
+                            <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+
+                                            <a target="_blank" href="https://wa.me/62817222223/?text=Saya+ingin+bertanya+terkait+paket+perjalanan+umrah" class="page-item-each py-10 flex-both-center">
+                            <img class="link-each-image" src="assets/images/WhatsApp.svg">
+                            <span class="item-title text-center">Daftarkan Sekarang</span>
+                        </a>
+                                    </div>
+                            <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+
+                                            <!-- Modal Trigger -->
+                        <a href="javascript:void(0);" onclick="openModal(`Kantor Pusat`, `https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31719.40479429455!2d107.491021!3d-6.403587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696de12125e6ef%3A0x3a9d903f18e04191!2sPT.%20SAFIR%20CATURJAYA%20WISATA!5e0!3m2!1sid!2sid!4v1750000792490!5m2!1sid!2sid`, `https://maps.app.goo.gl/x9YyUkSbZGwaMkz99`)" class="page-item-each py-10 flex-both-center">
+                            <img class="link-each-image" src="assets/images/png-clipart-google-maps-navigation-map-text-logo.png">
+                            <span class="item-title text-center">Kantor Pusat</span>
+                        </a>
+                                    </div>
+                            <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+
+                                            <a target="_blank" href="https://facebook.com/safircaturjaya" class="page-item-each py-10 flex-both-center">
+                            <img class="link-each-image" src="assets/images/facebook.png">
+                            <span class="item-title text-center">Ikuti Kami di Facebook</span>
+                        </a>
+                                    </div>
+                    </div>
+    </div>
+</div>
+
+<!-- Modal HTML -->
+<div class="modal-overlay" id="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal()">×</span>
+        <h3 id="modal-title"></h3>
+        <iframe id="modal-map" loading="lazy" allowfullscreen=""></iframe>
+        <p style="text-align:center; margin-top:10px;">
+            <a href="#" target="_blank" id="modal-link">Lihat di Google Maps</a>
+        </p>
+    </div>
+</div>
+
+<script>
+    function openModal(title, embedUrl, link) {
+        document.getElementById("modal").style.display = "flex";
+        document.getElementById("modal-title").innerText = title;
+        document.getElementById("modal-map").src = embedUrl;
+        document.getElementById("modal-link").href = link;
+    }
+
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+        document.getElementById("modal-map").src = ""; // stop map loading
+    }
+
+    window.onclick = function(e) {
+        const modal = document.getElementById("modal");
+        if (e.target === modal) closeModal();
+    }
+</script>
+
+
+
+<veepn-lock-screen><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen><veepn-guard-alert><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-guard-alert><script>(() => {
+        window.addoncropExtensions = window.addoncropExtensions || [];
+        window.addoncropExtensions.push({
+            mode: 'emulator',
+            emulator: 'Foxified',
+            extension: {
+                id: 44,
+                name: 'YouTube Downloader by Addoncrop',
+                version: '17.5.4',
+                date: 'March 19, 2023',
+            },
+            flixmateConnected: false,
+        });
+    })();</script>
+</body>
+</html>
